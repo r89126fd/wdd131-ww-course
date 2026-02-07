@@ -1,0 +1,98 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f8f9fa;
+}
+
+/* ENCABEZADO */
+header {
+    background-color: #003366;
+    color: white;
+    text-align: center;
+    padding: 1.5rem;
+}
+
+/* FILTROS */
+.filters {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin: 1.5rem;
+    flex-wrap: wrap;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #003366;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #0055a0;
+}
+
+/* TARJETAS DE TEMPLOS */
+.temple-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 1.5rem;
+    padding: 0 1.5rem 2rem;
+}
+
+.temple-card {
+    background: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+}
+
+.temple-card:hover {
+    transform: translateY(-5px);
+}
+
+.temple-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.temple-info {
+    padding: 1.2rem;
+}
+
+.temple-info h2 {
+    margin-bottom: 0.5rem;
+    color: #003366;
+}
+
+.temple-info p {
+    margin: 0.4rem 0;
+}
+
+/* PIE DE PÁGINA */
+footer {
+    text-align: center;
+    padding: 1.5rem;
+    background-color: #003366;
+    color: white;
+    margin-top: 2rem;
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .temple-card {
+        transition: none;
+    }
+}
